@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>個人網站</title>
+  <meta charset="UTF-8">
+<style>
+header{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(220, 231, 231);
+  font-weight: bolder;
+}
+.one {
+  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.one a{
+  padding: 10px 5px 20px 20px;
+  font-size: 25px;
+  color: aqua;
+  display: block;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+}
+.one a:hover{
+  color: darkgrey;
+}
+.two{
+  background-color: mediumseagreen;
+  float: left;
+}
+.two a{
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+.two a:hover{
+  background-color: forestgreen;
+  color: azure;
+}
+.three{
+  float: right;
+}
+.hid{
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: rgb(91, 238, 157);
+}
+.hid a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 25px;
+}
+.three:hover .hid{
+  display: block;
+}
+.four{
+  background-color: mediumseagreen;
+  height: 40px;
+}
+.four p{
+  color: mediumseagreen;
+  font-size: 0px;
+}
+body{
+  background-image: url('miku1.jpeg');
+  background-size: cover;
+}
+.home{
+  margin: 50px 80mm 50px 80mm;
+  border: 4px ridge skyblue;
+  text-align: center;
+  background-color: rgba(23, 247, 255, 0.5);
+}
+ul li{
+  margin-left: 90mm;
+  text-align: left;
+}
+footer {
+  background-color: mediumseagreen;
+  margin-top: 60mm;
+  padding: 1px;
+  text-align: center;
+  color: rgb(41, 41, 41);
+}
+
+</style>
+</head>
+<header>
+   <p>謝孟澔<span style="font-size: 20px;padding-left: 5px;"> Hsieh Meng Hao</span></p> 
+</header>  
+
+<body>
+  <div id="mySidenav" class="one"> 
+    <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+    <a href="https://www.facebook.com/MHaoHsieh" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/sakuramhao/?hl=zh-tw" target="_blank">Instagram</a>
+    <a href="contactme.html">聯繫我</a>
+  </div>
+  <div class="two"> 
+    <span style="font-size: 30px;cursor:pointer;font-weight: bold" onclick="openNav()">&#9776;More</span>
+    <a href="HomePage.html">主頁</a>
+    <a href="baseinformation.html">基本資料</a>
+    <a href="interest.html">興趣</a>
+    <div class="three"> 
+      <a href="#">My Github</a>
+      <div class="hid">
+        <a href="https://github.com/SMH642800/C-language-Semester-1-">C language</a>
+        <a href="https://github.com/SMH642800/Windows_Form---Semester-2">Windows form (C#)</a>
+        <a href="https://github.com/SMH642800/wp108b">HTML/CSS/Javascript</a>
+      </div>
+    </div>
+  </div>
+  <div class="four"> 
+    <p>0</p>
+  </div>
+  <div class="home"><span style="font-size: 40px;">謝孟澔の個人網站--首頁--</span>
+    <hr>
+    <img src="IMG_0144_Original" height="387px" width="515px"> 
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+
+
+</html> 
