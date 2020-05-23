@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>個人網站</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="contactme.css"/><!--外部連結CSS-->
+</head>
+
+<header>
+    <p>謝孟澔 - Hsieh Meng Hao<span style="font-size: 20px;padding-left: 5px;"></span></p> <!--頂部標題-->
+</header>  
+
+<body>
+    <div id="mySidenav" class="one"> <!--側欄選單-->
+        <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        <a href="https://www.facebook.com/MHaoHsieh" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/sakuramhao/?hl=zh-tw" target="_blank">Instagram</a>
+        <a href="contactme.html">聯繫我</a>
+      </div>
+      <div class="two"> <!--功能表-->
+        <span style="font-size: 30px;cursor:pointer;font-weight: bold" onclick="openNav()">&#9776;More</span>
+        <a href="HomePage.html">主頁</a>
+        <a href="baseinformation.html">基本資料</a>
+        <a href="interest.html">興趣</a>
+        <div class="three"> 
+          <a href="#">My Github</a> <!--下拉式選單-->
+          <div class="hid">
+            <a href="https://github.com/SMH642800/C-language-Semester-1-">C language</a>
+            <a href="https://github.com/SMH642800/Windows_Form---Semester-2">Windows form (C#)</a>
+            <a href="https://github.com/SMH642800/wp108b">HTML/CSS/Javascript</a>
+          </div>
+        </div>
+      </div>
+      <div class="four"> 
+        <p>0</p>
+      </div>
+      <!--網頁內容-->
+      <div class="home">
+        <p style="color: whitesmoke;font-size: 30px;text-align: center;">line ID:smh0801</p>
+        <p style="color: whitesmoke;font-size: 30px;text-align: center;">telegram:+886 921278008</p>
+        <p style="color: whitesmoke;font-size: 30px;text-align: center;">Gmail信箱:SMH642800@gmail.com</p>
+        <p style="color: whitesmoke;font-size: 30px;text-align: center;">手機:0921278008</p>
+      </div>
+
+  <script>/*側欄選開啟、關閉*/
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html> 
