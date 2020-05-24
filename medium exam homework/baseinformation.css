@@ -1,94 +1,93 @@
 /*以下是標題*/
 header{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-  }
-  /*以下是側欄選單*/
-  .one {
-    
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(17, 17, 17, 0.85);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 20px;
-  }
-  .one a{
-    padding: 10px 5px 20px 20px;
-    font-size: 25px;
-    color: skyblue; 
-    display: block;
-    font-family: monospace;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .one a:hover{
-    color: darkgrey;
-  }
-  /*以下是功能表*/
-  .two{
-    background-color: dimgray;
-    float: left;
-  }
-  .two a{
-    font-size: 30px;
-    text-align: center;
-    padding: 0px 20px;
-    text-decoration: none;
-    color: azure;
-  }
-  .two a:hover{
-    background-color: darkgray;
-    color: black;
-  }
-  /*以下是下拉式選單*/
-  .three{
-    float: right;
-  }
-  .hid{
-    display: none;
-    position: absolute;
-    min-width: 130px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    background-color: dimgray;
-  }
-  .hid a{
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 25px;
-  }
-  .three:hover .hid{
-    display: block;
-  }
-  .four{
-    background-color: dimgray;
-    height: 45px;
-  }
-  .four p{
-    color: dimgray;
-    font-size: 0px;
-  }
-  /*以下是背景圖片*/
-  body{
-    background-image: url('IMG_6156.jpg');
-    background-size: cover;
-  }
-  /*以下是表格欄*/
-  .home{ 
-    margin: 50px 80mm 50px 80mm;
-    border: 4px ridge skyblue;
-    text-align: center;
-    font-size: 30px;
-    background-color: grey;
-  }
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+  background-color: dimgrey;
+}
+/*以下是側欄選單*/
+.one {
   
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(54, 54, 54);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.one a{
+  padding: 10px 5px 20px 20px;
+  font-size: 25px;
+  color: whitesmoke; 
+  display: block;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+}
+.one a:hover{
+  color: black;
+}
+/*以下是功能表*/
+.two{
+  background-color: dimgray;
+  float: left;
+}
+.two a{
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  color: azure;
+}
+.two a:hover{
+  background-color: darkgray;
+  color: black;
+}
+/*以下是下拉式選單*/
+.three{
+  float: right;
+}
+.hid{
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  background-color: dimgray;
+}
+.hid a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 25px;
+}
+.three:hover .hid{
+  display: block;
+}
+.four{
+  background-color: dimgray;
+  height: 45px;
+}
+.four p{
+  color: dimgray;
+  font-size: 0px;
+}
+/*以下是背景圖片*/
+body{
+  background-image: url('IMG_6156.jpg');
+  background-size: cover;
+}
+/*以下是表格欄*/
+.information{ 
+  margin: 50px 80mm 50px 80mm;
+  border: 4px ridge black;
+  text-align: center;
+  background-color: grey;
+}

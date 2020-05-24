@@ -85,10 +85,16 @@ header{
     background-size: cover;
   }
   /*以下是表格欄*/
-  .home{ 
-    margin: 50px 80mm 50px 80mm;
-    border: 4px ridge black;
-    text-align: center;
+  .interest{ 
+    border: 5px ridge black;
+    margin: 100px;
     color: whitesmoke;
-    background-color: grey;
+    background-color: gray;
+    font-size: 25px;
+    text-align: center;
   }
+  ul li{
+    display: inline-block;
+    margin: 10mm;
+    font-weight: bolder;
+}
